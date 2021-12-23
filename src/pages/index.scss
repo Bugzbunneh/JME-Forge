@@ -1,0 +1,409 @@
+// html,
+// body {
+//   margin: 0px;
+//   height: 100%;
+//   width: 100%;
+//   overflow: hidden;
+// }
+
+// .container {
+//   height: 100%;
+// }
+
+// .star-background {
+//   height: 100vh;
+//   // background: linear-gradient(to bottom, #020111 50%, #20202c 100%);
+// }
+
+// // .star-container {
+// //   width: 20px;
+// //   height: 20px;
+// // }
+
+// .star-container {
+//   $particleNum: 200;
+//   $particleColor: hsl(246, 87%, 12%);
+
+//   position: absolute;
+//   transform: translateY(-10vh);
+//   animation-iteration-count: infinite;
+//   animation-timing-function: linear;
+
+//   .star {
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 50%;
+//     mix-blend-mode: screen;
+//     background-image: radial-gradient(
+//       hsl(180, 100%, 80%),
+//       hsl(180, 100%, 80%) 10%,
+//       hsla(180, 100%, 80%, 0) 56%
+//     );
+
+//     animation: fadein-frames 200ms infinite, scale-frames 2s infinite;
+
+//     @keyframes fade-frames {
+//       0% {
+//         opacity: 1;
+//       }
+
+//       50% {
+//         opacity: 0.7;
+//       }
+
+//       100% {
+//         opacity: 1;
+//       }
+//     }
+
+//     @keyframes scale-frames {
+//       0% {
+//         transform: scale3d(0.4, 0.4, 1);
+//       }
+
+//       50% {
+//         transform: scale3d(2.2, 2.2, 1);
+//       }
+
+//       100% {
+//         transform: scale3d(0.4, 0.4, 1);
+//       }
+//     }
+//   }
+
+//   $particleBaseSize: 8;
+
+//   @for $i from 1 through $particleNum {
+//     &:nth-child(#{$i}) {
+//       $circleSize: random($particleBaseSize);
+//       width: $circleSize + px;
+//       height: $circleSize + px;
+
+//       $startPositionY: random(10) + 100;
+//       $framesName: "move-frames-" + $i;
+//       $moveDuration: 28000 + random(9000) + ms;
+
+//       animation-name: #{$framesName};
+//       animation-duration: $moveDuration;
+//       animation-delay: random(37000) + ms;
+
+//       @keyframes #{$framesName} {
+//         from {
+//           transform: translate3d(
+//             #{random(100) + vw},
+//             #{$startPositionY + vh},
+//             0
+//           );
+//         }
+
+//         to {
+//           transform: translate3d(
+//             #{random(100) + vw},
+//             #{- $startPositionY - random(30) + vh},
+//             0
+//           );
+//         }
+//       }
+
+//       .star {
+//         animation-delay: random(4000) + ms;
+//       }
+//     }
+//   }
+// }
+
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// html,
+// body {
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+// }
+
+// body {
+//   background-color: #021027;
+// }
+
+// .container {
+//   width: 100%;
+//   height: 100%;
+//   overflow: hidden;
+//   position: relative;
+// }
+
+// .background {
+//   display: block;
+//   position: absolute;
+//   top: 0;
+//   left: 0;
+//   object-fit: cover;
+//   width: 100%;
+//   height: 100%;
+
+//   mask-image: radial-gradient(
+//     white 0%,
+//     white 30%,
+//     transparent 80%,
+//     transparent
+//   );
+// }
+
+// .circle-container {
+//   $particleNum: 200;
+//   $particleColor: hsl(180, 100%, 80%);
+
+//   position: absolute;
+//   transform: translateY(-10vh);
+//   animation-iteration-count: infinite;
+//   animation-timing-function: linear;
+
+//   .circle {
+//     width: 100%;
+//     height: 100%;
+//     border-radius: 50%;
+//     mix-blend-mode: screen;
+//     background-image: radial-gradient(
+//       hsl(180, 100%, 80%),
+//       hsl(180, 100%, 80%) 10%,
+//       hsla(180, 100%, 80%, 0) 56%
+//     );
+
+//     animation: fadein-frames 200ms infinite, scale-frames 2s infinite;
+
+//     @keyframes fade-frames {
+//       0% {
+//         opacity: 1;
+//       }
+
+//       50% {
+//         opacity: 0.7;
+//       }
+
+//       100% {
+//         opacity: 1;
+//       }
+//     }
+
+//     @keyframes scale-frames {
+//       0% {
+//         transform: scale3d(0.4, 0.4, 1);
+//       }
+
+//       50% {
+//         transform: scale3d(2.2, 2.2, 1);
+//       }
+
+//       100% {
+//         transform: scale3d(0.4, 0.4, 1);
+//       }
+//     }
+//   }
+
+//   $particleBaseSize: 8;
+
+//   @for $i from 1 through $particleNum {
+//     &:nth-child(#{$i}) {
+//       $circleSize: random($particleBaseSize);
+//       width: $circleSize + px;
+//       height: $circleSize + px;
+
+//       $startPositionY: random(10) + 100;
+//       $framesName: "move-frames-" + $i;
+//       $moveDuration: 28000 + random(9000) + ms;
+
+//       animation-name: #{$framesName};
+//       animation-duration: $moveDuration;
+//       animation-delay: random(37000) + ms;
+
+//       @keyframes #{$framesName} {
+//         from {
+//           transform: translate3d(
+//             #{random(100) + vw},
+//             #{$startPositionY + vh},
+//             0
+//           );
+//         }
+
+//         to {
+//           transform: translate3d(
+//             #{random(100) + vw},
+//             #{- $startPositionY - random(30) + vh},
+//             0
+//           );
+//         }
+//       }
+
+//       .circle {
+//         animation-delay: random(4000) + ms;
+//       }
+//     }
+//   }
+// }
+
+// .message {
+//   position: absolute;
+//   right: 20px;
+//   bottom: 10px;
+//   color: white;
+//   font-family: "Josefin Slab", serif;
+//   line-height: 27px;
+//   font-size: 18px;
+//   text-align: right;
+//   pointer-events: none;
+//   animation: message-frames 1.5s ease 5s forwards;
+//   opacity: 0;
+
+//   @keyframes message-frames {
+//     from {
+//       opacity: 0;
+//     }
+
+//     to {
+//       opacity: 1;
+//     }
+//   }
+// }
+
+body {
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  font-family: "Anton", sans-serif;
+  justify-content: center;
+  align-items: center;
+}
+
+$shooting-time: 3000ms;
+
+.night {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform: rotateZ(45deg);
+  // animation: sky 200000ms linear infinite;
+}
+
+.shooting_star {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  // width: 100px;
+  height: 2px;
+  background: linear-gradient(
+    -45deg,
+    rgba(95, 145, 255, 1),
+    rgba(0, 0, 255, 0)
+  );
+  border-radius: 999px;
+  filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+  animation: tail $shooting-time ease-in-out infinite,
+    shooting $shooting-time ease-in-out infinite;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    // width: 30px;
+    height: 2px;
+    background: linear-gradient(
+      -45deg,
+      rgba(0, 0, 255, 0),
+      rgba(95, 145, 255, 1),
+      rgba(0, 0, 255, 0)
+    );
+    transform: translateX(50%) rotateZ(45deg);
+    border-radius: 100%;
+    animation: shining $shooting-time ease-in-out infinite;
+  }
+
+  &::after {
+    // CodePen Error
+    // @extend .shooting_star::before;
+
+    content: "";
+    position: absolute;
+    top: calc(50% - 1px);
+    right: 0;
+    // width: 30px;
+    height: 2px;
+    background: linear-gradient(
+      -45deg,
+      rgba(0, 0, 255, 0),
+      rgba(95, 145, 255, 1),
+      rgba(0, 0, 255, 0)
+    );
+    transform: translateX(50%) rotateZ(45deg);
+    border-radius: 100%;
+    animation: shining $shooting-time ease-in-out infinite;
+    transform: translateX(50%) rotateZ(-45deg);
+  }
+
+  @for $i from 1 through 20 {
+    &:nth-child(#{$i}) {
+      $delay: random(9999) + 0ms;
+      top: calc(50% - #{random(400) - 200px});
+      left: calc(50% - #{random(300) + 0px});
+      animation-delay: $delay;
+      // opacity: random(50) / 100 + 0.5;
+
+      &::before,
+      &::after {
+        animation-delay: $delay;
+      }
+    }
+  }
+}
+
+@keyframes tail {
+  0% {
+    width: 0;
+  }
+
+  30% {
+    width: 100px;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shining {
+  0% {
+    width: 0;
+  }
+
+  50% {
+    width: 30px;
+  }
+
+  100% {
+    width: 0;
+  }
+}
+
+@keyframes shooting {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(300px);
+  }
+}
+
+@keyframes sky {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(45 + 360deg);
+  }
+}

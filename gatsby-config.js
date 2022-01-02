@@ -9,6 +9,13 @@ const path = require("path");
 module.exports = {
   /* Your site config here */
   plugins: [
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `sliderImages`,
+        path: `${__dirname}/src/images/slider`, // wherever background images are stored
+      },
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,

@@ -61,7 +61,28 @@ body {
   width: 80%;
 }
 
-// React Slider Overrides
+.glow-animation {
+  // width: 2%;
+  // height: 2%;
+  border-radius: 25%;
+  animation: glow 2.5s infinite alternate;
+}
+
+@keyframes glow {
+  from {
+    box-shadow: 0 0 10px -10px white;
+  }
+
+  to {
+    box-shadow: 0 0 25px 1px white;
+  }
+}
+
+/**************************
+
+React Slider Overrides
+
+**************************/
 
 .slick-slide img {
   border-radius: 17px;

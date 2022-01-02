@@ -39,7 +39,8 @@ export default function Home() {
         <div className="jme-header">
           <div className="header-section">
             <div className="header-line"></div>
-            <div className="header-image">
+            <div className="header-image glow-animation">
+              {/* Might need to put glow-animation as it's own div inside this one, make it slightly smaller than the parent div */}
               <StaticImage src="../images/whiteInsta.png" alt="Instagram" />
             </div>
           </div>

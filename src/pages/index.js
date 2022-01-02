@@ -11,7 +11,7 @@ export default function Home() {
           <div className="header-section">
             <div className="header-line"></div>
             <div className="header-image">
-              <StaticImage src="../images/instagram.png" alt="Instagram" />
+              <StaticImage src="../images/whiteInsta.png" alt="Instagram" />
             </div>
           </div>
 

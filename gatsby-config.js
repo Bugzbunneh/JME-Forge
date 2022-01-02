@@ -4,7 +4,14 @@
  * See: https://www.gatsbyjs.com/docs/gatsby-config/
  */
 
+const path = require("path");
+
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-sass`],
+  plugins: [
+    `gatsby-plugin-sass`,
+    `gatsby-plugin-image`,
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
+  ],
 };

@@ -93,7 +93,7 @@ body {
   width: 100%;
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 480px) {
   /* For desktop: */
   .jme-logo {
     width: 12%;
@@ -104,30 +104,9 @@ body {
   .jme-carousel {
     width: 25%;
   }
+
+  // Fix for images overlapping
+  .slick-slider {
+    border: 2px solid rgba(2, 0, 36, 1);
+  }
 }
-
-// .jme-circle {
-//   border-radius: 50%;
-//   width: 150px;
-//   height: 150px;
-//   border: 3.5px solid #fff;
-//   color: white;
-// }
-
-// .jme-circle-text {
-//   font-family: Calibri, sans-serif;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   font-size: 2.8em;
-//   padding: 10%;
-
-//   p {
-//     margin: 0;
-//   }
-// }
-
-// .line {
-//   border-top: 3px solid white;
-//   width: 120px;
-// }

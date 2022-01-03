@@ -19,5 +19,5 @@ module.exports = {
     `gatsby-plugin-sharp`,
     `gatsby-transformer-sharp`,
   ],
-  pathPrefix: "/jme-forge",
+  pathPrefix: "/JME-Forge",
 };

@@ -38,10 +38,12 @@ export default function Home() {
       <div className="flex-container">
         <div className="jme-header">
           <div className="header-section">
-            <div className="header-line"></div>
+            <div className="header-line" />
             <div className="header-image">
-              <StaticImage src="../images/whiteInsta.png" alt="Instagram" />
-              <div className="glow-animation"></div>
+              <a href="https://www.instagram.com/jme_forge/">
+                <StaticImage src="../images/whiteInsta.png" alt="Instagram" />
+                <div className="glow-animation" />
+              </a>
             </div>
           </div>
 
@@ -53,7 +55,7 @@ export default function Home() {
             <div className="header-image">
               <StaticImage src="../images/forgeIcon.png" alt="Forge Icon" />
             </div>
-            <div className="header-line"></div>
+            <div className="header-line" />
           </div>
         </div>
         <div className="jme-carousel">

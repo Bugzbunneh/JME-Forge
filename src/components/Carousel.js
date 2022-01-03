@@ -25,8 +25,7 @@ const Carousel = () => {
   const sliderSettings = {
     dots: true,
     infinite: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
+    autoplay: false,
   };
 
   return (

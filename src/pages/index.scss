@@ -89,7 +89,7 @@ React Slider Overrides
 }
 
 // Fix for images overlapping
-.slick-slider {
+.slick-slide {
   border: 1px solid $bg-color;
 }
 
@@ -124,10 +124,5 @@ React Slider Overrides
   }
   .jme-carousel {
     width: 25%;
-  }
-
-  // Fix for images overlapping
-  .slick-slider {
-    border: 2px solid $bg-color;
   }
 }

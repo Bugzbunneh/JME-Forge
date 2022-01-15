@@ -1,14 +1,18 @@
 import React from "react";
 import { StaticImage } from "gatsby-plugin-image";
+import { Link } from "gatsby";
 
 const Header = () => {
   return (
     <div className="jme-header">
       <div className="header-section">
-        <div className="header-line" />
         <div className="header-image">
           <a href="https://www.instagram.com/jme_forge/">
-            <StaticImage src="../images/whiteInsta.png" alt="Instagram" />
+            <StaticImage
+              src="../images/whiteInsta.png"
+              alt="Instagram"
+              placeholder="blurred"
+            />
             <div className="glow-animation" />
           </a>
         </div>
@@ -19,10 +23,9 @@ const Header = () => {
       </div>
 
       <div className="header-section">
-        <div className="header-image">
-          <StaticImage src="../images/forgeIcon.png" alt="Forge Icon" />
-        </div>
-        <div className="header-line" />
+        <Link to="/shop">
+          <button className="jme-shop-button">SHOP</button>
+        </Link>
       </div>
     </div>
   );

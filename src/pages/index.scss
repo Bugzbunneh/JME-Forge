@@ -1,4 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Lobster");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 $bg-color: #0c0000;
+$primary-font: "Roboto";
+$secondary-font: "Lobster";
+$primary-text-color: white;
 
 html,
 body {
@@ -41,11 +46,25 @@ body {
   width: 33%;
 }
 
+.jme-shop-button {
+  background: none;
+  color: $primary-text-color;
+  font-family: $secondary-font;
+  font-size: 1.5rem;
+  border-radius: 9px;
+  border: 2px solid white;
+  padding: 8%;
+  box-shadow: 0px 5px 10px rgb(255 255 255 / 50%);
+}
+
 .header-section {
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 33%;
+  color: white;
+  font-family: $primary-font;
+  font-size: 1.5rem;
 }
 
 .header-line {
@@ -55,7 +74,7 @@ body {
 }
 
 .jme-carousel {
-  height: 60%;
+  height: 100%;
   width: 80%;
 }
 
@@ -84,8 +103,20 @@ React Slider Overrides
 
 **************************/
 
-.slick-slide img {
-  border-radius: 17px;
+.jme-carousel {
+  .slick-slide img {
+    border-radius: 17px;
+  }
+
+  .slick-dots li button:before {
+    color: white !important;
+    opacity: 0.5;
+  }
+
+  .slick-dots li.slick-active button:before {
+    color: white !important;
+    opacity: 1 !important;
+  }
 }
 
 // Fix for images overlapping
@@ -99,19 +130,78 @@ React Slider Overrides
   align-items: center;
 }
 
-.slick-dots li button:before {
-  color: white !important;
-  opacity: 0.5;
+.shop-container {
+  height: 100%;
+  width: 80%;
 }
 
-.slick-dots li.slick-active button:before {
-  color: white !important;
-  opacity: 1 !important;
-}
-
-/* For mobile phones: */
-[class*="col-"] {
+.jme-product-container {
+  height: 60%;
   width: 100%;
+}
+
+.jme-product-image-slider {
+  height: 75%;
+}
+
+.jme-product-image {
+  height: 310px;
+}
+
+.jme-product-info {
+  display: flex;
+  flex-wrap: wrap;
+  height: 125px;
+  border: 2px solid white;
+  color: $primary-text-color;
+  padding: 3%;
+  font-family: $primary-font;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+
+.jme-product-title {
+  height: 50%;
+  width: 50%;
+  font-weight: bold;
+}
+
+.jme-product-description {
+  height: 50%;
+  width: 50%;
+  font-size: 1rem;
+}
+
+.jme-product-price {
+  display: flex;
+  height: 50%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+}
+
+.jme-product-button {
+  display: flex;
+  height: 50%;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+
+  > button {
+    background: none;
+    color: $primary-text-color;
+    font-family: $primary-font;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: 2px solid white;
+    padding: 8%;
+    box-shadow: 0px 5px 10px rgba(97, 255, 66, 0.5);
+
+    &:active {
+      background-color: lightgreen;
+      color: black;
+    }
+  }
 }
 
 @media only screen and (min-width: 480px) {
